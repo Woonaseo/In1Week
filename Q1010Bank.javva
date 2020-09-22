@@ -1,0 +1,23 @@
+import java.util.GregorianCalendar;
+import java.util.Random;
+
+class Main {
+  public static void main(String[] args) {
+    GregorianCalendar today = new GregorianCalendar();
+    int y = today.get(GregorianCalendar.YEAR);
+    int m = today.get(GregorianCalendar.MONTH)+1;
+    int d = today.get(GregorianCalendar.DATE);
+    System.out.printf("오늘은 %d년 %d월 %d일 입니다.\n",y,m,d);
+
+    Random rand - new Random();
+    int k = random.nextInt(5);
+    System.out.println("오늘의 운세는 ");
+    switch(k){
+      case 0 : System.out.print("대길");
+      case 1 : System.out.print("길");
+      case 2 : System.out.print("중길");
+      case 3 : System.out.print("소길");
+      case 4 : System.out.print("흉길");
+    }
+  }
+}
